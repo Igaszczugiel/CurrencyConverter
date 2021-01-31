@@ -1,1 +1,70 @@
-/* to plik css */
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #f12c7f solid 1px;
+    margin: 40px 40px 0 40px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-image: url("https://cdn.pixabay.com/photo/2017/03/16/21/18/logo-2150297_960_720.png") ;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #EA4F1F;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #EA4F1F;
+    margin: 3px;
+}
+
+.converter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #e0d8db solid 1px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.number {
+    margin: 20px;
+}
+
+.button {
+    color:   rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: #EA4F1F;
+    border: none;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.button:hover {
+    color:   #EA4F1F;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: #ececec;
+    border: none;
+    padding: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.result-line {
+    display: flex;
+    margin-left: 30px;
+}
