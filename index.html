@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+
     <div class="top-header">
         <div class="logo">
         </div>
@@ -21,22 +23,49 @@
         </div>
     </div>
     <div class="converter">
-        <form>
-            <input class="number" type="number" placeholder="Type amount">
-<!-- JS 02 / show list of available currencies -->
-            <select id="currencyList"></select>
-<!-- JS 03 / button ktory on click triggers 01 -->
+        <form id="convertIt">
+
+                <!-- JS 01 / type how much to convert -->
+            <input id="number" class="number" type="number" placeholder="Type amount">
+
+
+            <!-- JS 00 / show list of available currencies PLN -->
+            <label for="baseCurrency" class="h3">Convert from: </label>
+            <select id="currencyListFrom">
+                <option value="pln" id="pln">PLN</option>
+            </select>
+
+                <!-- JS 02 / show list of available currencies -->
+            <label for="ResultCurrency" class="h3">into: </label>
+            <select id="currencyListTo">
+                <option value="euro" id="euro">EUR</option>
+                <option value="dollar" id="dollar">US DOLLAR</option>
+                <option value="franc" id="franc">SWISS FRANC</option>
+            </select>
+
+
+                <!-- JS 03 / button ktory on click triggers 01 -->
             <button class="button" id="button">
                 Convert!
             </button>
+        
+        
+        
         </form>
+
+
+<!-- JS 04 / show result of the function -->
         <div id="resultLine" class="result-line">
             <h2>Equals:</h2>
-<!-- JS 01 / show result of the function -->
-            <h2 id="result">22</h2>
+<!-- here  -->
+           <span class="result" id="result"></span>
             <h2> PLN </h2>
         </div>
+    
+    
+    
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>        
 </body>
 </html>

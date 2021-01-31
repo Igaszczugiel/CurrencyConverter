@@ -29,9 +29,16 @@ h2 {
     margin: 3px;
 }
 
+.h3 {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #EA4F1F;
+    margin: 3px;
+}
+
 .converter {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     border: #e0d8db solid 1px;
     margin-top: 10px;
