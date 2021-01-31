@@ -18,8 +18,9 @@
     <div class="top-header">
         <div class="logo">
         </div>
-        <div>
-            <h1>Currency converter</h1>
+        <div class="title">
+            <h1>Currency Converter</h1>
+            <h4>EUR / US DOLLAR / SWISS FRANC into PLN</h4>
         </div>
     </div>
     <div class="converter">
@@ -29,18 +30,19 @@
             <input id="number" class="number" type="number" placeholder="Type amount">
 
 
-            <!-- JS 00 / show list of available currencies PLN -->
-            <label for="baseCurrency" class="h3">Convert from: </label>
-            <select id="currencyListFrom">
-                <option value="pln" id="pln">PLN</option>
-            </select>
 
                 <!-- JS 02 / show list of available currencies -->
-            <label for="ResultCurrency" class="h3">into: </label>
-            <select id="currencyListTo">
+            <label for="baseCurrency" class="h3">From: </label>
+            <select id="currencyListFrom">
                 <option value="euro" id="euro">EUR</option>
                 <option value="dollar" id="dollar">US DOLLAR</option>
                 <option value="franc" id="franc">SWISS FRANC</option>
+            </select>
+
+            <!-- JS 00 / show list of available currencies PLN -->
+            <label for="resultCurrency" class="h3">Convert into: </label>
+            <select id="currencyListTo">
+                <option value="pln" id="pln">PLN</option>
             </select>
 
 

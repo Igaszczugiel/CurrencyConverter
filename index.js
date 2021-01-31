@@ -91,4 +91,3 @@ result.innerHTML = wynik funkcji
 // 			document.body.appendChild(slt);
 // 		});
 // } -->
-

@@ -1,6 +1,6 @@
 .top-header {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     border: #f12c7f solid 1px;
     margin: 40px 40px 0 40px;
@@ -15,11 +15,17 @@
     margin: 20px;
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
 h1 {
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     color: #EA4F1F;
-    margin: 20px;
+    /* margin: 10px; */
 }
 
 h2 {
@@ -34,6 +40,13 @@ h2 {
     font-family: 'Roboto', sans-serif;
     color: #EA4F1F;
     margin: 3px;
+}
+
+h4 {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #EA4F1F;
+    margin-top: 5px;
 }
 
 .converter {
