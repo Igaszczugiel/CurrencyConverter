@@ -12,7 +12,7 @@ document.getElementById("button").addEventListener("click", function() {
   let x = document.getElementById("currencyListFrom").value;
   let number = document.getElementById("number").value;
   document.getElementById("result").innerHTML = number * x;
-}
+});
 
 
 
@@ -32,54 +32,50 @@ document.getElementById("button").addEventListener("click", function() {
 // url dla id pln = http://api.nbp.pl/api/exchangerates/rates/a/pln/
 // url dla id euro = http://api.nbp.pl/api/exchangerates/rates/a/eur/
 // url dla id dollar = http://api.nbp.pl/api/exchangerates/rates/a/usd/
-// url dla id franc = http://api.nbp.pl/api/exchangerates/rates/a/chf/
+// url dla id franc = http://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
 
-// 01 input w ktory wpisywana jest ilosc do przeliczenia
-let number = document.getElementById("number");
-// 03 button do convertowania
-let button = document.getElementById("button");
-// 04 here tu pojawi sie resultat
-let result = document.getElementById('result');
-let body = document.querySelector("body");
-let final;
+
+
+
 
 function convertCurrency() {
-    let url = 'http://api.nbp.pl/api/exchangerates/rates/a/';
-    let urlApi = (url + '/?format=json')
+    let url = 'http://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json';
 
-    fetch(urlApi).then(resp => resp.json()).then((response) => {
-        
-        final = {
-            mid: response.rates[0].mid,
-        }   
-        let sum = final.mid * number.value
+    fetch(url).then(resp => resp.json()).then((response) => {
+        // let franc = przypisz wartosc 
+        console.log(response.rates[0].mid);
+
+        // final = {
+        //     mid: response.rates[0].mid,
+        // }   
+        // let sum = final.mid * number.value
        
-        result.innerHTML = sum
+        // result.innerHTML = sum
     })
 }; 
 
-function convertCurrency()
+convertCurrency();
 
 
 
 // tu jest cos co sie przyda
-var button = document.getElementById('getCurrencies');
-  var body = document.querySelector("body");
-  button.addEventListener("click", () => {
-    fetch("https://api.frankfurter.app/latest")
-    .then(resp => resp.json())
-    .then(data => {
-      console.log(data);
-      let selection = document.createElement("select");
-        Object.values(data.rates).forEach(option => {
-          const opt = document.createElement("option");
-          opt.innerHTML += option;
-          selection.appendChild(opt);
-        });
-      document.body.appendChild(selection);
-    })
-    .catch(err => console.log(err))
-  });
+// var button = document.getElementById('getCurrencies');
+//   var body = document.querySelector("body");
+//   button.addEventListener("click", () => {
+//     fetch("https://api.frankfurter.app/latest")
+//     .then(resp => resp.json())
+//     .then(data => {
+//       console.log(data);
+//       let selection = document.createElement("select");
+//         Object.values(data.rates).forEach(option => {
+//           const opt = document.createElement("option");
+//           opt.innerHTML += option;
+//           selection.appendChild(opt);
+//         });
+//       document.body.appendChild(selection);
+//     })
+//     .catch(err => console.log(err))
+//   });
 
 
 
