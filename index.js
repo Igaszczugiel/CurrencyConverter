@@ -15,14 +15,6 @@ document.getElementById("button").addEventListener("click", function() {
 });
 
 
-
-// tresc zadania
-// Korzystając z darmowego API ze strony NBP (https://api.nbp.pl/?ref=public-apis) 
-// należy stworzyć prosty przelicznik walut uwzględniający następujące waluty: 
-// euro, dolary amerykańskie, franki szwajcarskie. Aplikacja ma umożliwiać 
-// przeliczanie wybranej waluty na złotówki. Kurs danej waluty ma być brany jako
-// najnowszy (z dnia bieżącego).
-
 // <!-- JS 00 / show list of available currencies PLN -->
 // <!-- JS 01 / type how much to convert -->
 // <!-- JS 02 / show list of available currencies -->
@@ -33,9 +25,6 @@ document.getElementById("button").addEventListener("click", function() {
 // url dla id euro = http://api.nbp.pl/api/exchangerates/rates/a/eur/
 // url dla id dollar = http://api.nbp.pl/api/exchangerates/rates/a/usd/
 // url dla id franc = http://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
-
-
-
 
 
 function convertCurrency() {
