@@ -1,14 +1,4 @@
-// <!-- JS 00 / show list of available currencies PLN -->
-// <!-- JS 01 / type how much to convert -->
-// <!-- JS 02 / show list of available currencies -->
-// <!-- JS 03 / button ktory on click triggers 01 -->
-
-// url dla id pln = http://api.nbp.pl/api/exchangerates/rates/a/pln/
-// url dla id euro = http://api.nbp.pl/api/exchangerates/rates/a/eur/
-// url dla id dollar = http://api.nbp.pl/api/exchangerates/rates/a/usd/
-// url dla id franc = http://api.nbp.pl/api/exchangerates/rates/a/chf/?format=json
-
-
+// .toFixed()  -> to add
 let result = document.getElementById("result");
 let form = document.querySelector('#convertIt');
 
@@ -16,8 +6,7 @@ form.addEventListener("submit", convertCurrency);
 
 function convertCurrency(event) {
     event.preventDefault();
-    // to stopuje forme przed naturalnym zachowaniem 
-    // (przeladowanie strony - default behaviour)
+    // this stops form from default behaviour (page reload)
     let currencyCode = document.querySelector('#currencyListFrom').value;
     let url = `http://api.nbp.pl/api/exchangerates/rates/a/${currencyCode}/?format=json`;
 

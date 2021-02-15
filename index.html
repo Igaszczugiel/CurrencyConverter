@@ -11,10 +11,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-
     <div class="top-header">
         <div class="logo">
         </div>
@@ -27,9 +24,6 @@
         <form id="convertIt">
             <!-- JS 01 / type how much to convert -->
             <input id="amount" class="number" type="number" placeholder="Type amount">
-
-
-
             <!-- JS 02 / show list of available currencies -->
             <label for="baseCurrency" class="h3">From: </label>
             <select id="currencyListFrom">
@@ -37,31 +31,23 @@
                 <option value="usd">US DOLLAR</option>
                 <option value="chf">SWISS FRANC</option>
             </select>
-
             <!-- JS 00 / show list of available currencies PLN -->
             <label for="resultCurrency" class="h3">Convert into: </label>
             <select id="currencyListTo">
                 <option value="pln" id="pln">PLN</option>
             </select>
-
                 <!-- JS 03 / button ktory on click triggers 01 -->
             <button class="button" id="button">
                 Convert!
             </button>
-        
         </form>
-
-
-<!-- JS 04 / show result of the function -->
+        <!-- JS 04 / show result of the function -->
         <div id="resultLine" class="result-line">
             <h2>Equals:</h2>
-<!-- here  -->
+            <!-- here  -->
            <span class="result" id="result"></span>
             <h2> PLN </h2>
-        </div>
-    
-    
-    
+        </div>   
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>        

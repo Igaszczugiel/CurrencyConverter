@@ -6,6 +6,13 @@
     margin: 40px 40px 0 40px;
 }
 
+.result {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #cc370a;
+    margin: 3px;
+}
+
 .logo {
     height: 100px;
     width: 100px;
