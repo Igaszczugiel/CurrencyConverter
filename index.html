@@ -25,15 +25,14 @@
     </div>
     <div class="converter">
         <form id="convertIt">
-
-                <!-- JS 01 / type how much to convert -->
-            <input id="number" class="number" type="number" placeholder="Type amount">
-
+            <!-- JS 01 / type how much to convert -->
+            <input id="amount" class="number" type="number" placeholder="Type amount">
 
 
-                <!-- JS 02 / show list of available currencies -->
+
+            <!-- JS 02 / show list of available currencies -->
             <label for="baseCurrency" class="h3">From: </label>
-            <select id="currencyListFrom" onchange="myFunction()">
+            <select id="currencyListFrom">
                 <option value="eur">EUR</option>
                 <option value="usd">US DOLLAR</option>
                 <option value="chf">SWISS FRANC</option>
@@ -45,13 +44,10 @@
                 <option value="pln" id="pln">PLN</option>
             </select>
 
-
                 <!-- JS 03 / button ktory on click triggers 01 -->
             <button class="button" id="button">
                 Convert!
             </button>
-        
-        
         
         </form>
 
