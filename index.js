@@ -1,4 +1,3 @@
-// .toFixed()  -> to add
 let result = document.getElementById("result");
 let form = document.querySelector('#convertIt');
 
@@ -15,6 +14,6 @@ function convertCurrency(event) {
         let currencyRate = response.rates[0].mid;
         let amount = document.getElementById("amount").value;
         let total = currencyRate * amount;
-        result.innerHTML = total;
+        result.innerHTML = total.toFixed(2);
     })
 }; 
