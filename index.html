@@ -22,9 +22,7 @@
     </div>
     <div class="converter">
         <form id="convertIt">
-            <!-- JS 01 / type how much to convert -->
             <input id="amount" class="number" type="number" placeholder="Type amount">
-            <!-- JS 02 / show list of available currencies -->
             <label for="baseCurrency" class="h3">From: </label>
             <select id="currencyListFrom">
                 <option value="eur">EUR</option>
@@ -32,20 +30,16 @@
                 <option value="chf">CHF</option>
                 <option value="isk">ISK</option>
             </select>
-            <!-- JS 00 / show list of available currencies PLN -->
             <label for="resultCurrency" class="h3">Convert into: </label>
             <select id="currencyListTo">
                 <option value="pln" id="pln">PLN</option>
             </select>
-                <!-- JS 03 / button ktory on click triggers 01 -->
             <button class="button" id="button">
                 Convert!
             </button>
         </form>
-        <!-- JS 04 / show result of the function -->
         <div id="resultLine" class="result-line">
             <h2>Equals:</h2>
-            <!-- here  -->
            <span class="result" id="result"></span>
             <h2> PLN </h2>
         </div>   
